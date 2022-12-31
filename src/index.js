@@ -44,7 +44,7 @@ async function getData(location) {
     console.log(weather);
     renderWeather(weather);
 
-    return [weather, forecast];
+    return weather;
 }
 
 //clear div with current weather info and rerender it with new data

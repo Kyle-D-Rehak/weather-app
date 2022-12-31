@@ -17,23 +17,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid   red;
 }
 
 #header {
     padding: 1rem;
-    background-color: grey;
+    background-color: lightgray;
 }
 
 #weatherContainer {
     padding: 2rem;
-    background-color: darkgrey;
-    border: 1px solid red;
+    background-color: lightgray;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 15rem;
+    aspect-ratio: 1 / 1;
 }
 
 .loader {
