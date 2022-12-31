@@ -57,6 +57,9 @@ function renderWeather(weather) {
     const location = document.createElement('h2');
     location.textContent = weather.name;
     
+    const icon = document.createElement('img');
+    icon.setAttribute('src', `/icons/${weather.weather[0].icon}.png`);
+
     const condition = document.createElement('p');
     condition.textContent = weather.weather[0].description;
     
@@ -68,6 +71,7 @@ function renderWeather(weather) {
     
     container.innerHTML = '';
     container.appendChild(location);
+    container.appendChild(icon);
     container.appendChild(condition);
     container.appendChild(temp);
     container.appendChild(highLow);
